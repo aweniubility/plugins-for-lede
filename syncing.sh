@@ -1,13 +1,19 @@
-echo -n "输入提交介绍，默认为‘Just auto-commit for synchronizing workspace’ ->"
-read msg
- if [ -z "$msg" ]; then
-     echo "committing as comment 'auto-commit for synchronizing'"
-	 msg="auto-commit for synchronizing"
- fi
+#!/bin/bash
+ 
+ 
+
+read -p 'commiting message >' -t 5 -n 50
+if [ $ = 0 ] ; then
+	$="auto-commit for synchronizing"
+else
+echo "$"
+fi
+ 
 git pull
 git add *
 git add -A
-git commit -m "$msg"
+git commit -m "$?"
 git push -u origin master
-
-pause
+ 
+ 
+ read 
