@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ -n $1]; then
+if [ -n "$1"]; then
 	msg="Synchronizing"
 else
 	read  -p 'Commit message>' msg
