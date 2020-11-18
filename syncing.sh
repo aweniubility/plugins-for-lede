@@ -2,9 +2,11 @@
 
 read  -p 'commit message>'  
  if [ -z "$?" ]; then
-     echo "committing as comment : 'auto-commit for synchronizing'"
+     
 	 ?="auto-commit for synchronizing"
  fi
+ 
+echo "committing : $?"
 git pull
 git add *
 git add -A
