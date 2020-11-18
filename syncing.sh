@@ -2,11 +2,11 @@
  
  
 
-read -p 'commiting message >' -t 5 -n 50
+read -p 'commiting message >' -n 50
 if [ $? = 0 ] ; then
 	$?="auto-commit for synchronizing"
 else
-echo "$?"
+	echo "commit as $?"
 fi
  
 git pull
