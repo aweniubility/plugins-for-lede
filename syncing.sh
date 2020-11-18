@@ -3,7 +3,7 @@
 read  -p 'commit message>'  
  if [ -z "$?" ]; then
      
-	 ?="auto-commit for synchronizing"
+	 $?="auto-commit for synchronizing"
  fi
  
 echo "committing : $?"
