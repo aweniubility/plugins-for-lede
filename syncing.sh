@@ -1,11 +1,11 @@
 #!/bin/bash
 
-read  -p 'commit message>' msg
+read  -p 'Commit message>' msg
  if [ -z "$msg" ]; then     
-	 msg="auto-commit for synchronizing"
+	 msg="Synchronizing"
  fi
  
-echo "committing : $msg"
+echo "Committing as '$msg'"
 git pull
 git add *
 git add -A
