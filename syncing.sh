@@ -1,5 +1,5 @@
 #!/bin/bash
-if [$1 ='auto']; then
+if [ -n $1]; then
 	msg="Synchronizing"
 else
 	read  -p 'Commit message>' msg
