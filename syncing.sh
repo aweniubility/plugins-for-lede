@@ -1,8 +1,8 @@
 #!/bin/bash
 
 read  -p 'commit message>' msg
- if [ -z "$?" ]; then     
-	 $msg="auto-commit for synchronizing"
+ if [ -z "$msg" ]; then     
+	 msg="auto-commit for synchronizing"
  fi
  
 echo "committing : $msg"
