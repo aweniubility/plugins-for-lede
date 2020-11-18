@@ -9,7 +9,7 @@ echo "Committing as '$msg'"
 git pull
 git add *
 git add -A
-git commit -m "$?"
+git commit -m "$msg"
 git push -u origin master
  
  
